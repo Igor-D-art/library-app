@@ -1,0 +1,58 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%hv;
+}
+
+header {
+    display: flex;
+}
+
+.main-section {
+    display: flex;
+    justify-content: space-between;
+    flex: 1 1 auto;
+}
+
+#library-section{
+    display: flex;
+    border: 1px solid gray;
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+#popup-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+#popup {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    border: 1px solid gray;
+    color: rgb(0, 0, 0);
+    border-radius: 6px;
+}
+
+.pophidden {
+    visibility: hidden;
+}
+
+.popvisible {
+    visibility: visible;
+}
+
+.btn-cont {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+footer{
+    display: flex;
+}

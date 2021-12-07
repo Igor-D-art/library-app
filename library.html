@@ -5,14 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="library.css" rel="stylesheet">
+    <script defer src="library.js"></script>
+
 </head>
 <body>
-    <h1> Odin Recipes</h1>
+    <header>
+      Library App - just add your books and mark the read status when finished reading! All is simple :)
+    </header>
 
-    <ol>
-      <li><a href="recipes/lasagna.html", target="blank">Lasagna</a></li>
-      <li><a href="recipes/pancakes.html", target="blank">Pencakes</a></li>
-      <li><a href="recipes/steak.html", target="blank">Steak</a></li>
-    </ol>
+    <div class="main-section"> 
+
+      <div id="library-section">
+
+      </div>
+
+      <div id="popup-section">
+
+        <button id="input"> Add a book </button>
+
+        <div id="popup" class="pophidden">
+          <div></div>
+          <button id="closeInp"> Close </button>
+            <label> Title </lable><input id="title" type="text"></input> </label>
+            <label> Author <input id="author" type="text"></input></label>
+            <label> Pages <input id="pages" type="text"></input></label>
+            <label> Already read? <input id="isRead" type="checkbox"></input></label>
+          <div class="btn-cont">
+            <button id="submit"> Add a book </button>
+            <button id="clearInp"> Clear </button>
+          </div>  
+        </div>
+
+      </div>
+
+    </div>
+
+    <footer>
+      Just some text
+    </footer>
+
 </body>
 </html>
