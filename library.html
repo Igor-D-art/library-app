@@ -21,21 +21,28 @@
       </div>
 
       <div id="popup-section">
-
-        <button id="input"> Add a book </button>
-
-        <div id="popup" class="pophidden">
-          <div></div>
-          <button id="closeInp"> Close </button>
-            <label> Title </lable><input id="title" type="text"></input> </label>
-            <label> Author <input id="author" type="text"></input></label>
-            <label> Pages <input id="pages" type="number"></input></label>
-            <label> Already read? <input id="isRead" type="checkbox"></input></label>
-          <div class="btn-cont">
-            <button id="submit"> Add a book </button>
-            <button id="clearInp"> Clear </button>
-          </div>  
-        </div>
+        <form id="popup">
+          <fieldset>
+            <legend>Add a book</legend>
+            <div>
+              <label for="title"> Title </label>
+              <input type="text" id="title" minlength="1" required>
+            </div>
+            <div>
+              <label for="author"> Author </label>
+              <input type="text" id="author" minlength="1" required>
+            </div>
+            <div>
+              <label for="pages">Pages</label>
+              <input type="number" id="pages" minlength="1" required>
+            </div>
+            <div class="buttons">
+              <button id="input" type="submit"> Add a book </button>
+              <button id="clear" type="reset"> Clear form </button>
+            </div>
+            
+          </fieldset>
+        </form>
 
       </div>
 
